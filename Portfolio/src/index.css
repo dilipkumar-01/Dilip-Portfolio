@@ -1603,18 +1603,39 @@ body {
 }
 
 /* Focus styles for accessibility */
-button:focus,
-a:focus,
-input:focus,
+.button:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+a:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
 textarea:focus {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
 
 /* Dark mode focus styles */
-.dark button:focus,
-.dark a:focus,
-.dark input:focus,
+.dark button:focus {
+  outline-color: #3b82f6
+}
+
+.dark a:focus {
+  outline-color: #60a5fa;
+}
+
+.dark input:focus {
+  outline-color: #60a5fa;
+}
+
 .dark textarea:focus {
   outline-color: #60a5fa;
 }
@@ -1951,4 +1972,40 @@ label {
 
 .invisible {
   visibility: hidden;
+}
+
+.b2b {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: trasparent;
+  font-size: 15px;
+  font-weight: bolder;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.b2b:hover,
+.b2b:focus {
+  color: #3b82f6;
+  font-weight: bolder;
+  transition: all 0.4s;
+}
+
+
+.b2b::after {
+  height: 2px;
+  width: 100%;
+  background: rgb(0, 183, 255);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.b2b:hover::after {
+  outline: none;
+  font-size: 24px;
 }
