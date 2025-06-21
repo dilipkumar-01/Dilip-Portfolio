@@ -175,7 +175,7 @@ function App() {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className={`text-sm font-medium transition-all duration-300 px-3 py-2 rounded-lg transform hover:scale-105 cursor-pointer ${activeSection === item.toLowerCase()
+                    className={`navbu text-sm font-medium transition-all duration-300 px-3 py-2 rounded-lg transform hover:scale-105 cursor-pointer b2b ${activeSection === item.toLowerCase()
                       ? isDarkMode
                         ? 'text-blue-400 border-b-2 border-blue-400 pb-1'
                         : 'text-blue-600 border-b-2 border-blue-600 pb-1'
@@ -192,9 +192,9 @@ function App() {
               {/* Dark Mode Toggle */}
               <button
                 onClick={toggleDarkMode}
-                className={`p-2 rounded-lg transition-all duration-300 transform hover:scale-110 cursor-pointer ${isDarkMode
-                  ? 'bg-gray-800 text-yellow-400 hover:bg-gray-700 hover:text-yellow-300'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-800'
+                className={`p-2 rounded-lg transition-all duration-300 transform hover:scale-110 cursor-pointer b2b ${isDarkMode
+                  ? 'bg-gray-800 text-yellow-400 hover:text-yellow-300'
+                  : 'bg-gray-100 text-gray-600 hover:text-gray-800'
                   }`}
                 aria-label="Toggle dark mode"
               >
@@ -282,8 +282,8 @@ function App() {
                   <ChevronRight className="w-5 h-5" />
                 </button>
                 <button className={`border-2 px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 transform hover:scale-105 cursor-pointer ${isDarkMode
-                  ? 'border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900'
-                  : 'border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white'
+                  ? 'border-blue-400-1 text-blue-400 hover:bg-blue-400 hover:text-gray-900'
+                  : 'border-blue-600-1 text-blue-600 hover:bg-blue-600 hover:text-white'
                   }`}>
                   <Download className="w-5 h-5" />
                   Download CV
