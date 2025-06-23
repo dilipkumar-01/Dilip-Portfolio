@@ -284,8 +284,8 @@ function App() {
                 <button
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = '/Dilip Kumar Resume.pdf'; 
-                    link.download = 'Dilip Kumar Resume.pdf'; 
+                    link.href = '/Dilip Kumar Resume.pdf';
+                    link.download = 'Dilip Kumar Resume.pdf';
                     link.click();
                   }}
                   className={`border-2 px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 transform hover:scale-105 cursor-pointer ${isDarkMode
