@@ -678,8 +678,13 @@ function App() {
                   }`}>
                   <Linkedin className="w-6 h-6 text-white" />
                 </a>
-                <a href="mailto:dilipnava2@gmail.com" className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-200 cursor-pointer ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-600 hover:bg-gray-700'
-                  }`}>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=dilipnava2@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-200 cursor-pointer ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-600 hover:bg-gray-700'
+                    }`}
+                >
                   <Mail className="w-6 h-6 text-white" />
                 </a>
               </div>
