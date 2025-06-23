@@ -130,7 +130,7 @@ const ContactForm = ({ isDarkMode }) => {
                 {/* Email */}
                 <div>
                     <label className="flex items-center gap-2 text-sm font-medium mb-2 ...">
-                        <User className="w-4 h-4" />
+                        <Mail className="w-4 h-4" />
                         Email
                     </label>
                     <input
@@ -150,7 +150,7 @@ const ContactForm = ({ isDarkMode }) => {
                 {/* Message */}
                 <div>
                     <label className="flex items-center gap-2 text-sm font-medium mb-2 ...">
-                        <User className="w-4 h-4" />
+                        <MessageSquare className="w-4 h-4" />
                         Message
                     </label>
                     <textarea
