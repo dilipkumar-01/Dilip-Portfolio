@@ -523,7 +523,7 @@ function App() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className={`rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group cursor-pointer ${isDarkMode ? 'bg-gray-800' : 'bg-white'
+              <div key={index} className={`rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group ${isDarkMode ? 'bg-gray-800' : 'bg-white'
                 }`}>
                 <div className="relative overflow-hidden">
                   <img
