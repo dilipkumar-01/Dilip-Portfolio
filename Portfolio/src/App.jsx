@@ -165,7 +165,7 @@ function App() {
           <div className="flex justify-between items-center py-4">
             <div className={`text-2xl font-bold transition-colors duration-300 cursor-pointer ${isDarkMode ? 'text-blue-400' : 'text-blue-700'
               }`}>
-              Portfolio.
+              Dilip.dev
             </div>
 
             <div className="flex items-center gap-4">
@@ -281,10 +281,18 @@ function App() {
                   View My Work
                   <ChevronRight className="w-5 h-5" />
                 </button>
-                <button className={`border-2 px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 transform hover:scale-105 cursor-pointer ${isDarkMode
-                  ? 'border-blue-400-1 text-blue-400 hover:bg-blue-400 hover:text-gray-900'
-                  : 'border-blue-600-1 text-blue-600 hover:bg-blue-600 hover:text-white'
-                  }`}>
+                <button
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = '/Dilip Kumar Resume.pdf'; 
+                    link.download = 'Dilip Kumar Resume.pdf'; 
+                    link.click();
+                  }}
+                  className={`border-2 px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 transform hover:scale-105 cursor-pointer ${isDarkMode
+                    ? 'border-blue-400-1 text-blue-400 hover:bg-blue-400 hover:text-gray-900'
+                    : 'border-blue-600-1 text-blue-600 hover:bg-blue-600 hover:text-white'
+                    }`}
+                >
                   <Download className="w-5 h-5" />
                   Download CV
                 </button>
@@ -666,11 +674,11 @@ function App() {
                   }`}>
                   <Github className="w-6 h-6 text-white" />
                 </a>
-                <a href="www.linkedin.com/in/navagana-dilip-kumar" className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-200 cursor-pointer ${isDarkMode ? 'bg-blue-700 hover:bg-blue-600' : 'bg-blue-600 hover:bg-blue-700'
+                <a href="https://www.linkedin.com/in/navagana-dilip-kumar/" className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-200 cursor-pointer ${isDarkMode ? 'bg-blue-700 hover:bg-blue-600' : 'bg-blue-600 hover:bg-blue-700'
                   }`}>
                   <Linkedin className="w-6 h-6 text-white" />
                 </a>
-                <a href="dilipnava2@gmail.com" className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-200 cursor-pointer ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-600 hover:bg-gray-700'
+                <a href="mailto:dilipnava2@gmail.com" className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-200 cursor-pointer ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-600 hover:bg-gray-700'
                   }`}>
                   <Mail className="w-6 h-6 text-white" />
                 </a>
