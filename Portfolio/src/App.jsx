@@ -105,8 +105,8 @@ function App() {
       description: 'A Healthcare Dashboard is a visual interface that displays key health-related data and metrics in real time. It helps doctors, administrators, and patients track vital signs, appointments, lab results, and patient records in one place. Designed for clarity and efficiency, it improves decision-making, monitoring, and overall healthcare management.',
       technologies: ['React', 'HTML/CSS', 'Node.js', 'SQL', 'JavaScript', 'Auth0 '],
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      liveUrl: 'https://fitpeo-healthcaredashboard.netlify.app/',
-      githubUrl: 'https://github.com/dilipkumar-01/fitpeo-healthcaredashboard',
+      liveUrl: 'https://dilip-healthcare-dashboard.netlify.app',
+      githubUrl: 'https://github.com/dilipkumar-01/fitpeo-healthcare-dashboard',
       highlights: ['Real-time Collaboration', 'User Authentication', 'Responsive Design', 'REST API Integration']
     },
     {
